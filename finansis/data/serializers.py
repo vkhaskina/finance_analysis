@@ -5,5 +5,6 @@ class ShareSerializer(serializers.ModelSerializer):
     class Meta:
         model = Share
 
-        fields = ['id', 'filename', 'ticker', 'date',
-                  'open', 'high', 'low', 'close', 'vol']
+        fields = ['id', 'filename', 'ticker', 'period', 'date',
+                  'open', 'high', 'low', 'close', 'vol',
+                  'profit_simple', 'profit_ln']

@@ -39,9 +39,7 @@
     </nav>
 
     <section class="section">
-      <div class="container">
         <router-view/>
-      </div>
     </section>
   </div>
 
@@ -54,6 +52,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style>
   @import "bulma/css/bulma.min.css";
+
   html, body {
     margin: 0;
     padding: 0;
@@ -64,8 +63,6 @@ import { RouterLink, RouterView } from 'vue-router'
     width: 100%;
     min-height: 100vh;
     display: flex;
-    padding: 0;
-    margin: 0;
     flex-direction: column;
   }
 
@@ -76,16 +73,12 @@ import { RouterLink, RouterView } from 'vue-router'
     border-radius: 0;
   }
 
-  .navbar-item {
-    background-color: black;
-  }
-
   .section {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
     flex: 1;
-    padding-top: 3.25rem;
     background: #f5f5f5;
   }
+
 </style>

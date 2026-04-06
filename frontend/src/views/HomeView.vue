@@ -85,6 +85,8 @@
               this.$refs.fileInput.value = '';
             }
             this.selectedFile = null;
+            const filename = result.filename;
+            this.$router.push({ name: 'analysis', params: { filename }});
 
           } else {
             this.error = result.error || result.message || 'Ошибка при загрузке файла';
